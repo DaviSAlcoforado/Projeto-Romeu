@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Equipe Root</title>
+    <style>
+        #mapa {
+          height:400px;
+          width:400px;
+        }
+    </style>
+    <title>Meu primeiro site no GitHub Pages</title>
 </head>
 <body>
-    <h1>Equipe Root</h1>
+    <h1>Eu sou um jovem aprendiz</h1>
+    <div id = "mapa"></div>
+    <script>
+    function inicializar() {
+        var coordenadas = {lat: -22.912869, lng: -43.228963};
+
+        var mapa = new google.maps.Map(document.getElementById('mapa'), {
+          zoom: 15,
+          center: coordenadas 
+        });
+
+        var marker = new google.maps.Marker({
+          position: coordenadas,
+          map: mapa,
+          title: 'Meu marcador'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDes_LoUxvJkcBGVk9mhF5VdqJfUaqbAq8&callback=inicializar">
+    </script>
 </body>
 </html>
