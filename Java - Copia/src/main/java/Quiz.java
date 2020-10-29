@@ -16,13 +16,13 @@ public class Quiz {
 
 		questionario.add(new Question(q, a, "Sim"));
 
-		q = "Você acha que algumas mulheres peder para ser assediadas";
+		q = "Você acha que algumas mulheres pedem para ser assediadas?";
 		a = new String[]{"Sim", "Não"};
 
 		questionario.add(new Question(q, a, "Não"));
 	}
 
-	public void comecar() {
+	public int comecar() {
 		Scanner scan = new Scanner(System.in);
 
 		int contador = 0;
@@ -40,19 +40,15 @@ public class Quiz {
 
 			String resposta = scan.nextLine();
 
-			if (resposta.equals("Sim"))
+			if (resposta.equals("Sim") || resposta.equals("sim"))
 				contador ++;
 
 
 		}
 
-		scan.close();
+		//scan.close();
 		
-		if (contador > 0)
-			System.out.println("Você é machista.");
-
-		else 
-			System.out.println("Sério? parabéns =)).");
+		return contador;
 
 	}
 }
