@@ -9,6 +9,10 @@
   width: 50px;
   margin-left: 20px;
   margin-right: 20px;
+  color: rgba(255,255,255,0);
+  border-color: #ffffff;
+  filter: blur(0px) brightness(200%) contrast(200%) grayscale(100%) hue-rotate(360deg) invert(6%) saturate(200%) sepia(100%);
+  opacity: 1;
 }
 
 @media (max-width:767px) {
