@@ -10,15 +10,15 @@ public class Quiz {
 	public Quiz() {
 		questionario = new ArrayList<Question>();
 		String q = "Você já realizou alguma das práticas abaixo?";
-		String[] a = {"Disse que mulher é pior que homem dirigindo", "Disse que homem não pode chorar, isso é coisa de mulher", "Não mostrei meus sentimentos por medo de ser julgado"};
+		String[] a = {"Disse que mulher é pior que homem dirigindo", "Reprimiu algum amigo por falar sobre seus sentimentos", "Disse que o que estava fazendo era coisa de homem para alguma amiga/namorada"};
 		questionario.add(new Question(q, a, "Não"));
 		//
 		q = "Você acha que visitar psicólogo não é coisa de 'macho'?";
 		a = new String[]{"Sim", "Não"};
 
-		questionario.add(new Question(q, a, "Sim"));
+		questionario.add(new Question(q, a, "Não"));
 
-		q = "Você acha que algumas mulheres pedem para ser assediadas?";
+		q = "Você concorda que falar sobre os sentimentos e problemas pessoais é uma besteira?";
 		a = new String[]{"Sim", "Não"};
 
 		questionario.add(new Question(q, a, "Não"));
